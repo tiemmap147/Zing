@@ -12,13 +12,14 @@ body{
     background-color: #fff;
     margin-bottom: 0;
     top: 0;
+    border-bottom: 1px solid #ddd;
 }
 .logo{
     width: 100px;
-    height: 100%;
+    height: 50%;
     padding: 5px 0;
     position: absolute;
-    top: 1px;
+    top: -10px;
     left: 0;
 }
 .logo-img{
@@ -27,17 +28,19 @@ body{
     height: 29px;
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
 }
 .menu{
     font-family: Arial, Helvetica, sans-serif;
     float: left;
-    vertical-align: middle;
+    vertical-align:middle;
     height: 52px;
-    line-height: 52px;
+    line-height: 40px;
     font-weight: bold;
     overflow: hidden;
     display: block;
-    margin-left: 75px;
+    margin-left: 0;
+    box-sizing: border-box;
 }
 ul{
     list-style: none;
@@ -49,10 +52,51 @@ ul{
     vertical-align: baseline;
     text-decoration: none;
     cursor: pointer;
+    
+}
+.link:hover{
+    color: #04b2f7;
 }
 .header-menu-item{
     float:left;
     margin-right: 15px;
     font-size: 14px;
     display: list-item;
+}
+.phapluat, .otoxemay, .suckhoe,.giaoduc,.dulich{
+    display: none;
+}
+.wrap{
+    width: 870px;
+    padding: 0 95px;
+    margin-left: -500px;
+    left: 50%;
+    float:left;
+    position: relative;
+}
+.link::after{
+    content:'';
+    display:block;
+    width: 100%;
+    height: 3px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.logo span{
+    font-size: 8px;
+    display: block;
+    letter-spacing: 0;
+    color: #444444;
+    width: 100%;
+    text-transform: uppercase;
+    padding-left: 0;
+    line-height: 1.2;
+    position: absolute;
+    top: 35px;
+    left: 1px;
+    text-indent: 0;
+    white-space: nowrap;
+    font-family: Arial, Helvetica, sans-serif;
 }
