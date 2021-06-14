@@ -102,7 +102,7 @@ ul{
     position: relative;
 }
 .wrap1{
-    width: 870px;
+    width: 900px;
     padding-top: 10px;
     margin-left: -500px;
     left: 50%;
@@ -124,7 +124,7 @@ ul{
 }
 .item .thumbnail a{
     display: block;
-    width: 100%;
+    width: 104%;
     height: 100%;
     position: relative;
     padding-bottom: 66%;
@@ -140,7 +140,7 @@ ul{
 
 }
 .item1{
-    width: 60%;
+    width: 50%;
     margin-bottom: 0;
     margin-right: 20px;
     float: left;
@@ -173,7 +173,7 @@ ul{
 }
 .summary{
     display: block;
-    font-size: 14px;
+    font-size: 18px;
     color: #444;
     line-height: 1.2;
     font-family:'Roboto',Ubuntu,sans-serif;
@@ -227,4 +227,96 @@ ul{
     color: #333;
     font-family: Arial, Helvetica, sans-serif;
     text-align: left;
+}
+.content1{
+    display: block;
+    float: left;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    margin-bottom: 50px;
+    background: #ffde76;
+    top: -30px;
+    left: -30px;
+    right: -30px;
+    bottom: -30px;
+
+}
+#multimedia{
+    margin-top: 30px;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+#multimedia::before{
+    content:"";
+    display: block;
+    position: absolute;
+    background: #ffde76;
+    top: -30px;
+    left: -30px;
+    right: -30px;
+    bottom: -30px;
+
+}
+.content .multimedia-title{
+    display: block;
+    margin-bottom: 20px;
+}
+.content .multimedia-title h3{
+    font-size: 2em;
+    font-weight: 600;
+    color: #000;
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+    padding: 0 15px 0 20px;
+    margin: 6px 0 4px 0;
+}
+.content .multimedia-title h3::before{
+    content: '';
+    position: absolute;
+    width: 5px;
+    left: 5px;
+    top: 2px;
+    bottom: 2px;
+    background-color: #dd3333;
+    -webkit-transform: skew(-20deg);
+}
+.content .multimedia-title ul{
+    display: inline-block;
+    margin-left: 30px;
+    position: relative;
+    top: -4px;
+    list-style: none;
+}
+.content .multimedia-title li{
+    display: inline-block;
+    margin-right: 30px;
+}
+.content .multimedia-title ul li a{
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+    text-transform: uppercase;
+    text-decoration: none;
+    vertical-align: baseline;
+}
+.content .multimedia-title ul li a:hover{
+    color: #dd3333;
+}
+.multimedia-content .item:first-child{
+    width: 45%;
+    float: left;
+    margin-bottom: 0;
+}
+.multimedia-content .item{
+    margin-right: 3%;
+    position: relative;
+    font-size: 1rem;
+    width: 23%;
+    float: left;
+    margin-bottom: 20px;
+    font-family:'Roboto',Ubuntu,sans-serif;
+    line-height: 1.4;
 }
