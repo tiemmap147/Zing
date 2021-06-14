@@ -259,11 +259,11 @@ ul{
     bottom: -30px;
 
 }
-.content .multimedia-title{
+.content .content-title{
     display: block;
     margin-bottom: 20px;
 }
-.content .multimedia-title h3{
+.content .content-title h3{
     font-size: 2em;
     font-weight: 600;
     color: #000;
@@ -273,7 +273,7 @@ ul{
     padding: 0 15px 0 20px;
     margin: 6px 0 4px 0;
 }
-.content .multimedia-title h3::before{
+.content .content-title h3::before{
     content: '';
     position: absolute;
     width: 5px;
@@ -283,18 +283,18 @@ ul{
     background-color: #dd3333;
     -webkit-transform: skew(-20deg);
 }
-.content .multimedia-title ul{
+.content .content-title ul{
     display: inline-block;
     margin-left: 30px;
     position: relative;
     top: -4px;
     list-style: none;
 }
-.content .multimedia-title li{
+.content .content-title li{
     display: inline-block;
     margin-right: 30px;
 }
-.content .multimedia-title ul li a{
+.content .content-title ul li a{
     font-size: 15px;
     font-weight: 600;
     color: #333;
@@ -302,7 +302,7 @@ ul{
     text-decoration: none;
     vertical-align: baseline;
 }
-.content .multimedia-title ul li a:hover{
+.content .content-title ul li a:hover{
     color: #dd3333;
 }
 .multimedia-content .item:first-child{
@@ -319,4 +319,26 @@ ul{
     margin-bottom: 20px;
     font-family:'Roboto',Ubuntu,sans-serif;
     line-height: 1.4;
+}
+#euro{
+    margin-bottom: 10px;
+
+}
+.content::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+#euro>header{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.content .content-title h3 a{
+    text-decoration: none;
+    color: #000;
+}
+
+.content .content-title h3 a:hover{
+    color: #3399cc;
 }
