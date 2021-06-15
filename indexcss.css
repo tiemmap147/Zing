@@ -125,7 +125,7 @@ ul{
 .item .thumbnail a{
     display: block;
     width: 104%;
-    height: 100%;
+    /* height: 100%; */
     position: relative;
     padding-bottom: 66%;
 
@@ -342,3 +342,65 @@ ul{
 .content .content-title h3 a:hover{
     color: #3399cc;
 }
+#euro .euro-content .item:first-child{
+    width: 60%;
+    display: flex;
+    position: relative;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    flex-direction: row-reverse;
+}
+#euro .euro-content .item{
+    width: 20%;
+    padding: 0 10px;
+}
+.euro-content .item{
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+.euro-content .item .thumbnail:first-child{
+    width: 100%;
+
+}
+.euro-content .item .thumbnail{
+    overflow: hidden;
+    margin-bottom: 8px;
+    position: relative;
+}
+.euro-content .item:first-child header{
+    width: 48%;
+    margin-right: 20px;
+}
+.euro-content .item:first-child header .title{
+    font-size: 1.5rem;
+}
+.euro-content .item .thumbnail img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.euro-content .item:first-child header .summary{
+    display: block;
+    font-size: 14px;
+    margin-top: 12px;
+}
+.item .summary{
+    color: #888;
+    line-height: 1.4;
+}
+.euro-content .item:nth-child(2){
+    width: 20%;
+}
+.euro-content .item header .title{
+    font-size: 1rem;
+}
+.euro-content .item:nth-child(2) header .summary{
+    display: block;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
