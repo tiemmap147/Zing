@@ -109,6 +109,8 @@ ul{
     float:left;
     position: relative;
     padding-top: 52px;
+    clear: both;
+    z-index: 99;
 }
 .left{
     width: 30%;
@@ -140,7 +142,7 @@ ul{
 
 }
 .item1{
-    width: 50%;
+    width: 60%;
     margin-bottom: 0;
     margin-right: 20px;
     float: left;
@@ -489,6 +491,38 @@ footer.links{
 #footer a{
     color: #888 !important;
     text-decoration: none;
+}
+.list{
+    float: left;
+    width: 100%;
+}
+.list .item{
+    margin-bottom: 29px;
+    font-size: 1.2rem;
+}
+.list .item .thumbnail{
+    width: 42%;
+    float: left;
+    margin-right: 15px;
+}
+.list .item .title{
+    font-size: 1.1em;
+    letter-spacing: 0;
+    line-height: 1.3;
+}
+.list .item .summary{
+    font-size: 0.7em;
+    display: block;
+}
+.list .item::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #eee;
+    position: absolute;
+    left: 0;
+    bottom: -15px;
 }
 
 
